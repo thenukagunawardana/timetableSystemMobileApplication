@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+    <TextView
+        android:id="@+id/textViewStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Student Homepage"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/view_modules_student"
+        android:layout_width="128dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="100dp"
+        android:text="View Modules"
+        android:textColor="#070606"
+        app:backgroundTint="#3AB5B0"
+        android:layout_below="@+id/textViewStudent"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/view_timetable_student"
+        android:layout_width="140dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="View Timetable"
+        android:textColor="#050404"
+        app:backgroundTint="#3AB5B0"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/view_modules_student"/>
+
+    <Button
+        android:id="@+id/logout_lecturer"
+        android:layout_width="240dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:text="Logout"
+        android:textColor="#070606"
+        app:backgroundTint="#673AB7"
+        android:layout_below="@id/view_timetable_student"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

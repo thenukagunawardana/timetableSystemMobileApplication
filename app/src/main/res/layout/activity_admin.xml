@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".AdminActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Admin Home"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/batch_admin"
+        android:layout_width="122dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="68dp"
+        android:text="Batch"
+        android:textColor="#070606"
+        app:backgroundTint="#3AB5B0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/users_admin"
+        android:layout_width="128dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="68dp"
+        android:text="Users"
+        android:textColor="#070606"
+        app:backgroundTint="#3AB5B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/batch_admin"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/timetable_admin"
+        android:layout_width="120dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="40dp"
+        android:text="Timetable"
+        android:textColor="#050404"
+        app:backgroundTint="#3AB5B0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batch_admin" />
+
+    <Button
+        android:id="@+id/module_admin"
+        android:layout_width="126dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="44dp"
+        android:text="Module"
+        android:textColor="#0B0909"
+        app:backgroundTint="#3AB5B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/timetable_admin"
+        app:layout_constraintTop_toBottomOf="@+id/users_admin" />
+
+    <Button
+        android:id="@+id/classroom_admin"
+        android:layout_width="134dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="28dp"
+        android:text="Classroom"
+        android:textColor="#0E0C0C"
+        app:backgroundTint="#3AB5B0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timetable_admin" />
+
+    <Button
+        android:id="@+id/logout_admin"
+        android:layout_width="240dp"
+        android:layout_height="54dp"
+        android:text="Logout"
+        android:textColor="#070606"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classroom_admin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

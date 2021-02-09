@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".LecturerActivity">
+
+    <TextView
+        android:id="@+id/textViewLecturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Lecturer Home"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/view_batches_lec"
+        android:layout_width="122dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="68dp"
+        android:text="View Batches"
+        android:textColor="#070606"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLecturer" />
+
+    <Button
+        android:id="@+id/view_modules_lec"
+        android:layout_width="128dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="68dp"
+        android:text="View Modules"
+        android:textColor="#070606"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/view_batches_lec"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLecturer" />
+
+    <Button
+        android:id="@+id/view_classrooms_lec"
+        android:layout_width="140dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="View Classrooms"
+        android:textColor="#050404"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_batches_lec" />
+
+    <Button
+        android:id="@+id/add_timetable_lec"
+        android:layout_width="126dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="44dp"
+        android:text="Add Timetable"
+        android:textColor="#0B0909"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/view_classrooms_lec"
+        app:layout_constraintTop_toBottomOf="@+id/view_modules_lec" />
+
+    <Button
+        android:id="@+id/logout_lecturer"
+        android:layout_width="240dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="176dp"
+        android:text="Logout"
+        android:textColor="#070606"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_classrooms_lec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
